@@ -1,29 +1,25 @@
-
-# Projektnamn här
+# GTAV Crew hemsida
 Projektmedlemmar: 
-[tstjostudent](https://github.com/tstjostudent), [xx222yy](https://github.com/tstjostudent), [yy222xx](https://github.com/tstjostudent)
+[pk222fe](https://github.com/pk222fe)
 
-*Lista alla medlemmar ovan. Ni behöver inte ange fullständiga namn utan länk till GitHub-konto räcker.*
 
 [Exekverbar version av projektet](http://tstjostudent.github.io/Projektet)
 
 *Länka till en körbar version av projektet ovan. Exempelvis kan ni skapa en gh-pages-branch på samma sätt som i Uppgift 1.1, laboration 1.*
 
 ## Beskrivning av projektet
-*En kort och koncis beskrivning av projektet. Vad är det ni vill skapa? Varför? Hur fick ni idén?*
+Jag spelar en del GTAV och i online-läget kan man starta en crew tillsammans med sina vänner. Min plan är att göra en hemsida till den crew jag är med i.
+Planen är att det ska finnas en startsida, profilsida för medlemmar, ett galleri, en lista över alla medlemmar oc ett formulär för att ansöka om att gå med.
 
 ## Tekniker
-*Vilka tekniker kommer att användas? Kommer ni att använda några ramverk? CSS-preprocessors?*
+Inga preprocessors eller ramverk kommer att användas.
 
 ## Begränsningar
-*Eventuella begränsningar i projektet. Kanske kommer viss funktionalitet att fejkas eftersom ni inte besitter kunskaper att skapa detta ännu?*
+Jag kommer att fejka en login funktion och en profilsida.
 
 ## Förstudier
-*Eventuellt redan existerande prototyper, användarundersökningar etc. Kanske gör ni om en befintlig webbplats? Beskriv då det här.*
-
-## *Förändra*
-*Lägg gärna till egna rubriker eller förändra strukturen så att den passar ert projekt.*
+Sidan kommer att göras från grunden.
 
 ## Tidsplanering
-*Länka till tidsplaneringen här, eller fäll in som en bild.*
+[Tidsplanering](https://docs.google.com/spreadsheet/ccc?key=0AmOmxlbRntUPdEhHUnVPcFI0Um9mVWllSlVXLVFOUmc&usp=sharing)
 

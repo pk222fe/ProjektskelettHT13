@@ -1,0 +1,62 @@
+@media only screen and (max-width: 480px){
+    body {
+    }
+    
+    header {
+        max-width: 480px;
+        display: block;
+        float: left;
+        background: #FFFFFF;
+        background-image: url(pics/logobg.png);
+        font-family: 'Arizonia', cursive;
+        font-size: 48px;
+        padding-top: 60px;
+        text-align: center;
+        width: 980px;
+    }
+    
+    #crew {
+        padding: 0;
+        margin: 0;
+        display: block;
+        font-family: 'Reenie Beanie', cursive;
+        color: #AE0400;
+        font-size: 64px;
+    }
+    
+    nav {
+        background: #C2B900;
+        height: 40px;
+        max-width: 480px;
+    }
+    nav ul {
+        list-style: none;
+    }
+    nav  ul li {
+        display: inline;
+        position: relative;
+        float: left;
+    }
+    nav ul li a {
+        display:block;
+        font-weight:bold;
+        color:#ffffff;
+        text-shadow: 2px 2px 0 #400;
+        border-radius: 15px;
+        border-style: outset;
+        border-color: #000000;
+        background-color:#FF9200;
+        max-width: 460px;
+        min-width: 400px;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+        text-transform:uppercase;
+    }
+    
+    main {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

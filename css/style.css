@@ -1,21 +1,27 @@
 @media only screen and (max-width: 480px){
     body {
+        margin: 0;
+        background: url(pics/LSlocobg.jpg) no-repeat;
+        background-position: -50px -50px;
+        background-attachment: fixed;
     }
     
     header {
-        max-width: 480px;
-        display: block;
+        position: fixed;
+        top: 0;
+        margin: auto;
+        width: 100%;
         float: left;
-        background: #FFFFFF;
-        background-image: url(pics/logobg.png);
         font-family: 'Arizonia', cursive;
         font-size: 48px;
-        padding-top: 60px;
+        padding-top: 40px;
         text-align: center;
-        width: 980px;
+        background: inherit;
+        z-index: 1000;
     }
     
     #crew {
+        padding-left: 120px;
         padding: 0;
         margin: 0;
         display: block;
@@ -25,38 +31,223 @@
     }
     
     nav {
-        background: #C2B900;
-        height: 40px;
-        max-width: 480px;
+        position: fixed;
+        z-index: 500;
+        margin-top: 175px;
+        display: table;
+        width: 480px;
+        background: #000000;
+        border-bottom: dashed 2px #FF9200;
+        border-top: dashed 2px #FF9200;
     }
     nav ul {
+        display: table-row;
         list-style: none;
+        background: inherit;
     }
     nav  ul li {
-        display: inline;
-        position: relative;
-        float: left;
+        display: table-cell;
+        padding: 3px;
+        background: inherit;
     }
     nav ul li a {
-        display:block;
+         -webkit-transition: all .2s ease-in-out; 
+        width: 80px;
+        font-family: 'Reenie Beanie', cursive;
+        display:inline;
         font-weight:bold;
         color:#ffffff;
         text-shadow: 2px 2px 0 #400;
         border-radius: 15px;
-        border-style: outset;
+        border-style: solid;
         border-color: #000000;
         background-color:#FF9200;
-        max-width: 460px;
-        min-width: 400px;
         text-align:center;
-        padding:4px;
         text-decoration:none;
         text-transform:uppercase;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a:hover {
+         -webkit-transform: scale(1.1); 
+        background: #000000;
+    }
+    #active a {
+        width: 80px;
+        font-family: 'Reenie Beanie', cursive;
+        display:inline;
+        font-weight:bold;
+        color:#ffffff;
+        text-shadow: 2px 2px 0 #400;
+        border-radius: 15px;
+        border-style: solid;
+        border-color: #FF9200;
+        background-color:#000000;
+        text-align:center;
+        text-decoration:none;
+        text-transform:uppercase;
+        float: left;
+        padding: 0;
+        margin: 0;
     }
     
     main {
         max-width: 480px;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .meter { 
+    	height: 20px;  /* Can be anything */
+	    position: relative;
+	    background: #555;
+	    -moz-border-radius: 25px;
+    	-webkit-border-radius: 25px;
+    	border-radius: 25px;
+    	padding: 10px;
+    	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+    	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+    	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+    }
+    .meter > span {
+    	display: block;
+    	height: 100%;
+    	   -webkit-border-top-right-radius: 8px;
+    	-webkit-border-bottom-right-radius: 8px;
+    	       -moz-border-radius-topright: 8px;
+    	    -moz-border-radius-bottomright: 8px;
+    	           border-top-right-radius: 8px;
+    	        border-bottom-right-radius: 8px;
+    	    -webkit-border-top-left-radius: 20px;
+    	 -webkit-border-bottom-left-radius: 20px;
+    	        -moz-border-radius-topleft: 20px;
+    	     -moz-border-radius-bottomleft: 20px;
+    	            border-top-left-radius: 20px;
+    	         border-bottom-left-radius: 20px;
+    	background-color: rgb(43,194,83);
+    	background-image: -webkit-gradient(
+    	  linear,
+    	  left bottom,
+    	  left top,
+    	  color-stop(0, rgb(43,194,83)),
+    	  color-stop(1, rgb(84,240,84))
+	 )
+	background-image: -webkit-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -ms-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -o-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
+    }
+    
+    section {
+        padding-top: 200px;
+        overflow: auto;
+    }
+    
+    article {
+        display:block;
+        border:6px solid #FF9200;
+        border-top:0;
+        border-left:0;
+        border-radius: 15;
+        width:80%;
+        position:relative;
+        margin-left: 20px;
+        padding-left: 10px;
+        margin-bottom: 20px;
+        background: #000000;
+        color: #FFFFFF;
+        bottom:6px;
+        right:6px;
+        opacity:.80;
+        *filter:alpha(opacity="80");
+    }
+    
+    h2, h3 {
+        border-bottom: solid 1px #FF9200;
+        font-family: 'Arizonia', cursive;
+        font-size: 24px;
+    }
+    
+    caption {
+        margin-top: 0;
+        margin-left: 25px;
+        padding: 4px;
+        color: #FFFFFF;
+        font-family: 'Arizonia', cursive;
+        font-size: 30px;
+    }
+    table {
+        border-collapse: collapse;
+        border: solid 5px #FF9200;
+        -webkit-border-radius: 45px;
+        -moz-border-radius: 45px;
+        border-radius: 45px;
+        width: 80%;
+        margin-top: 10px;
+        margin-left: 25px;
+        padding: 25px;
+        background: #000000;
+        opacity: 0.8;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+    }
+    thead th {
+        color: #FFFFFF;
+    }
+    tfoot {
+        height: 10px;
+        font-size: 14px;
+    }
+    td {
+        display: block;
+        border-style: ridge;
+        height: 35px;
+        padding-left: 10px;
+        margin: 5px;
+        /* IE10 Consumer Preview */ 
+        background-image: -ms-linear-gradient(top left, #FFAD40 0%, #000000 200%);
+
+        /* Mozilla Firefox */ 
+        background-image: -moz-linear-gradient(top left, #FFAD40 0%, #000000 200%);
+
+        /* Opera */ 
+        background-image: -o-linear-gradient(top left, #FFAD40 0%, #000000 200%);
+
+        /* Webkit (Safari/Chrome 10) */ 
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFAD40), color-stop(2, #000000));
+
+        /* Webkit (Chrome 11+) */ 
+        background-image: -webkit-linear-gradient(top left, #FFAD40 0%, #000000 200%);
+
+        /* W3C Markup, IE10 Release Preview */ 
+        background-image: linear-gradient(to bottom right, #FFAD40 0%, #000000 200%);
+    }
+    a {
+        color: #FFFFFF;
     }
 }

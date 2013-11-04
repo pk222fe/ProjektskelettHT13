@@ -1,4 +1,280 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul,
+li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+{margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent;}
+body {line-height: 1;}ol, ul{list-style:none;} blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content:'';content:none;}
+:focus{outline:0;} ins{text-decoration:none;} del{text-decoration:line-through;}
+table{border-collapse:collapse; border-spacing:0;}
+
+/*MAIN*/
+body { 
+	background: url(pics/bgfull.jpg) no-repeat;
+	background-attachment: fixed;
+	color: #555;
+}
+
+a {
+
+	color: #FF9200;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+
+a:hover {
+
+	color: #444;
+
+}
+
+
+header {
+    font-family:  'Arizonia', cursive;
+    font-size: 48px;
+	background: #000000;
+	color: #FF9200;
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	border-bottom: 4px solid #FF9200;
+	z-index: 100;
+	padding-left: 40px;
+	padding-top: 10px;
+
+}
+
+#crew {
+    
+    display: inline;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+    font-family: 'Reenie Beanie', cursive;
+    color: #AE0400;
+    font-size: 48px;
+    
+}
+
+
+
+nav {
+    float: right;
+    z-index: 500;
+    display: table;
+    background: #000000;
+    margin-right: 75px;
+}
+nav ul {
+    display: table-row;
+    list-style: none;
+}
+nav  ul li {
+    display: table-cell;
+    padding: 3px;
+}
+nav ul li a {
+     -webkit-transition: all .2s ease-in-out; 
+    width: 80px;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 18px;
+    display:inline;
+    font-weight:bold;
+    color:#ffffff;
+    text-shadow: 2px 2px 0 #400;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #000000;
+    background-color:#FF9200;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a:hover {
+     -webkit-transform: scale(1.1); 
+    background: #000000;
+}
+#active a {
+    width: 80px;
+    font-family: 'Reenie Beanie', cursive;
+    display:inline;
+    font-weight:bold;
+    color:#ffffff;
+    text-shadow: 2px 2px 0 #400;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #FF9200;
+    background-color:#000000;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+
+h1 {
+
+	font-size: 2em;
+	color: #2262AD;
+	line-height: 1.15em;
+	margin: 20px 0 ;
+
+}
+
+p {
+
+	line-height: 1.45em;
+	margin-bottom: 20px;
+
+}
+
+main {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+section {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+article {
+    padding-top: 20px;
+    display:block;
+    border:6px solid #FF9200;
+    border-top:0;
+    border-left:0;
+    border-radius: 15;
+    width:80%;
+    position:relative;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background: #000000;
+    color: #FFFFFF;
+    bottom:6px;
+    right:6px;
+    opacity:.80;
+    *filter:alpha(opacity="80");
+    overflow: show;
+}
+
+h2, h3 {
+    border-bottom: solid 1px #FF9200;
+    font-family: 'Arizonia', cursive;
+    font-size: 24px;
+}
+
+caption {
+    margin-top: 0;
+    margin-left: 25px;
+    padding: 4px;
+    color: #FFFFFF;
+    font-family: 'Arizonia', cursive;
+    font-size: 30px;
+}
+
+.forum {
+    margin-top: 25px;
+}
+
+
+
+table thead tr td {
+    border-bottom: solid 1px #FF9200;
+    font-family: 'Arizonia', cursive;
+}
+
+table tbody tr td {
+    border-bottom: solid 1px #FF99200;
+    text-align: right;
+}
+
+td {
+}
+
+a {
+    color: #FF9200;
+    text-decoration: none;
+}
+
+img {
+    width: 150px;
+    float: right;
+    height: auto;
+    border: solid 1px #FF9200;
+    padding: 3px;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+
+.leader h2, .commissioner h2, .lieutenant h2, .muscle h2 {
+    display: table;
+    font-size: 30px;
+    text-align: center;
+}
+.leader h3, .commissioner h3, .lieutenant h3, .muscle h3 {
+    display: table-row;
+}
+.leader, .commissioner, .lieutenant, .muscle {
+    width: 250px;
+    text-align: center;
+}
+.leader img, .commissioner img, .lieutenant img, .muscle img {
+    float: left;
+    margin-left: 40px;
+}
+#desiprof img {
+    height: 150px;
+}
+
+footer {
+    Position: fixed;
+    Width: 100%;
+    Bottom: 0;
+    Height: 40px;
+    background: #000000;
+    border-top: solid 2px #FF9200;
+}
+
+/* MEDIA QUIERY */
 @media only screen and (max-width: 480px){
+    
+    /*RESET*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+    
+    
     body {
         margin: 0;
         background: url(pics/LSlocobg.jpg) no-repeat;
@@ -14,10 +290,13 @@
         float: left;
         font-family: 'Arizonia', cursive;
         font-size: 48px;
+        color: #000000;
         padding-top: 40px;
+        padding-bottom: 40px;
         text-align: center;
         background: inherit;
         z-index: 1000;
+        border: none;
     }
     
     #crew {
@@ -33,7 +312,7 @@
     nav {
         position: fixed;
         z-index: 500;
-        margin-top: 175px;
+        margin-top: 0;
         display: table;
         width: 480px;
         background: #000000;
@@ -98,74 +377,11 @@
         margin-right: auto;
     }
     
-    .meter { 
-    	height: 20px;  /* Can be anything */
-	    position: relative;
-	    background: #555;
-	    -moz-border-radius: 25px;
-    	-webkit-border-radius: 25px;
-    	border-radius: 25px;
-    	padding: 10px;
-    	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
-    	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
-    	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
-    }
-    .meter > span {
-    	display: block;
-    	height: 100%;
-    	   -webkit-border-top-right-radius: 8px;
-    	-webkit-border-bottom-right-radius: 8px;
-    	       -moz-border-radius-topright: 8px;
-    	    -moz-border-radius-bottomright: 8px;
-    	           border-top-right-radius: 8px;
-    	        border-bottom-right-radius: 8px;
-    	    -webkit-border-top-left-radius: 20px;
-    	 -webkit-border-bottom-left-radius: 20px;
-    	        -moz-border-radius-topleft: 20px;
-    	     -moz-border-radius-bottomleft: 20px;
-    	            border-top-left-radius: 20px;
-    	         border-bottom-left-radius: 20px;
-    	background-color: rgb(43,194,83);
-    	background-image: -webkit-gradient(
-    	  linear,
-    	  left bottom,
-    	  left top,
-    	  color-stop(0, rgb(43,194,83)),
-    	  color-stop(1, rgb(84,240,84))
-	 )
-	background-image: -webkit-linear-gradient(
-	  center bottom,
-	  rgb(43,194,83) 37%,
-	  rgb(84,240,84) 69%
-	 );
-	background-image: -moz-linear-gradient(
-	  center bottom,
-	  rgb(43,194,83) 37%,
-	  rgb(84,240,84) 69%
-	 );
-	background-image: -ms-linear-gradient(
-	  center bottom,
-	  rgb(43,194,83) 37%,
-	  rgb(84,240,84) 69%
-	 );
-	background-image: -o-linear-gradient(
-	  center bottom,
-	  rgb(43,194,83) 37%,
-	  rgb(84,240,84) 69%
-	 );
-	-webkit-box-shadow: 
-	  inset 0 2px 9px  rgba(255,255,255,0.3),
-	  inset 0 -2px 6px rgba(0,0,0,0.4);
-	-moz-box-shadow: 
-	  inset 0 2px 9px  rgba(255,255,255,0.3),
-	  inset 0 -2px 6px rgba(0,0,0,0.4);
-	position: relative;
-	overflow: hidden;
-    }
-    
     section {
-        padding-top: 200px;
+        width: 480px;
+        padding-top: 250px;
         overflow: auto;
+        margin-bottom: 40px;
     }
     
     article {
@@ -201,53 +417,69 @@
         font-family: 'Arizonia', cursive;
         font-size: 30px;
     }
-    table {
-        border-collapse: collapse;
-        border: solid 5px #FF9200;
-        -webkit-border-radius: 45px;
-        -moz-border-radius: 45px;
-        border-radius: 45px;
-        width: 80%;
-        margin-top: 10px;
-        margin-left: 25px;
-        padding: 25px;
-        background: #000000;
-        opacity: 0.8;
-        color: #FFFFFF;
-        margin-bottom: 15px;
+    
+    .forum {
+        margin-top: 25px;
     }
-    thead th {
-        color: #FFFFFF;
+    
+    
+    table thead tr td {
+        padding-top: 5px;
+        border-bottom: solid 1px #FF9200;
+        font-family: 'Arizonia', cursive;
     }
-    tfoot {
-        height: 10px;
+    
+    table tbody tr td {
+        text-align: right;
         font-size: 14px;
+        padding: 2px;
     }
+    
     td {
-        display: block;
-        border-style: ridge;
-        height: 35px;
-        padding-left: 10px;
-        margin: 5px;
-        /* IE10 Consumer Preview */ 
-        background-image: -ms-linear-gradient(top left, #FFAD40 0%, #000000 200%);
-
-        /* Mozilla Firefox */ 
-        background-image: -moz-linear-gradient(top left, #FFAD40 0%, #000000 200%);
-
-        /* Opera */ 
-        background-image: -o-linear-gradient(top left, #FFAD40 0%, #000000 200%);
-
-        /* Webkit (Safari/Chrome 10) */ 
-        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFAD40), color-stop(2, #000000));
-
-        /* Webkit (Chrome 11+) */ 
-        background-image: -webkit-linear-gradient(top left, #FFAD40 0%, #000000 200%);
-
-        /* W3C Markup, IE10 Release Preview */ 
-        background-image: linear-gradient(to bottom right, #FFAD40 0%, #000000 200%);
+        
+        border-bottom: solid 2px #FF99200;
     }
+    
     a {
-        color: #FFFFFF;
+        color: #FF9200;
+        text-decoration: none;
     }
+    img {
+        width: 150px;
+        float: right;
+        height: auto;
+        border: solid 1px #FF9200;
+        padding: 3px;
+        margin-right: 5px;
+        margin-left: 3px;
+    }
+    
+    .leader h2, .commissioner h2, .lieutenant h2, .muscle h2 {
+        display: table;
+        font-size: 30px;
+        text-align: center;
+    }
+    .leader h3, .commissioner h3, .lieutenant h3, .muscle h3 {
+        display: table-row;
+    }
+    .leader, .commissioner, .lieutenant, .muscle {
+        width: 250px;
+        text-align: center;
+    }
+    .leader img, .commissioner img, -lieutenant img, .muscle img {
+        float: left;
+        margin-left: 40px;
+    }
+    #desiprof img {
+        height: 150px;
+    }
+    
+    footer {
+    Position: fixed;
+    Width: 100%;
+    Bottom: 0;
+    Height: 40px;
+    background: #000000;
+    border-top: solid 2px #FF9200;
+}
 }

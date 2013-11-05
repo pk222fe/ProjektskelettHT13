@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> d4586c67f143e1d1054ce5c30d60c8c13ad9a56d
 # GTAV Crew hemsida
 Projektmedlemmar: 
 [pk222fe](https://github.com/pk222fe)

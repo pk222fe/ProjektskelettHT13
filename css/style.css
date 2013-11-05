@@ -272,10 +272,9 @@ a {
     text-decoration: none;
 }
 
-article p img {
-    width: 150px;
+img {
+    max-width: 50%;
     float: right;
-    height: auto;
     border: solid 1px #FF9200;
     padding: 3px;
     margin-right: 5px;

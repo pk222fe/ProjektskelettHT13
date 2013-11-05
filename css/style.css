@@ -253,6 +253,17 @@ caption {
 	position: relative;
 	overflow: hidden;
 
+table {
+    display: table;
+}
+
+table tr {
+    display: table-row;
+}
+
+table tr td {
+    display: table-cell;
+}
 
 table thead tr td {
     border-bottom: solid 1px #FF9200;
@@ -310,7 +321,7 @@ footer {
     border-top: solid 2px #FF9200;
 }
 
-aside {
+section aside {
     float: right;
     padding-top: 20px;
     display:block;
@@ -329,11 +340,12 @@ aside {
     right:6px;
     opacity:.80;
     *filter:alpha(opacity="80");
-    overflow: show;
+    overflow: visible;
     
 }
 
 /* MEDIA QUIERY */
+
 @media only screen and (max-width: 480px){
 
     

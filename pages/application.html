@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="sv">
+<html>
 <head>
     <meta charset="utf-8"  />
     <meta name="viewport" content="width=device-width, user-scalable=false;" />
@@ -40,7 +40,54 @@
         </article>
         <article>
         <form method="post" action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php">
-        
+            <fieldset>
+                <legend>Application</legend>
+                <lable>Name: <input type="text" class="text" name="namn"/></lable></br>
+                <lable>Gamertag: <input type="text" class="text" name="gamertag" /></lable></br>
+                <lable>Gamerscore: <input type="text" class="text" name="gamerscore" /></lable></br>
+                <fieldset>
+                    <legend>Are you sure you want to join?</legend>
+                    <lable><input type="radio" name="Hells yeah!" />Hells Yeah!</lable>
+                    <lable><input type="radio" name="No, not really." />No, not really.</lable>
+                </fieldset>
+            </fieldset>
+            </br>
+            <fieldset>
+            
+                <legend>Application pt.2</legend>
+                <p>How did you find us?</p>
+                <ul>
+                    <li><lable>
+                        <input type="checkbox" name="foundyou" value="Interwebs dude" />Interwebs dude</lable></li>
+                    <li><lable>
+                        <input type="checkbox" name="foundyou" value="Met you guys ingame" />Met you guys ingame</lable></li>
+                    <li><lable>
+                        <input type="checkbox" name="foundyou" value="magazine" />Magazine</lable></li>
+                    <li><lable>
+                        <input type="checkbox" name="foundyou" value="Some friends" />Some friends told me</lable></li>
+                </ul>
+            </fieldset>
+            </br>
+            <fieldset>
+            <h2>Pick one</h2>
+            <select name="wootwoot" size="1">
+                <option value="0">Pick another one!</option>
+                <option value="1">Waffles dor breakfast</option>
+                <option value="2">I sleep on the floor</option>
+                <option value="3">My friends call me Barry</option>
+                <option value="4">What are we doing here?!</option>
+                <option value="5">I don´t own an Xbox</option>
+                <option value="6">Sheeeesh, this is so stupid!</option>
+            </select>
+            </br>
+            </br>
+            <lable>Leave a comment!</br>
+                <textarea name="comment" rows="3" cols="25"></textarea>
+            </lable>
+            </br>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+            </fieldset>
         </form>
         </article>
     </section>

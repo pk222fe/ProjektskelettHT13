@@ -20,7 +20,6 @@ a {
 
 	color: #FF9200;
 	text-decoration: none;
-	font-weight: bold;
 
 }
 
@@ -123,7 +122,6 @@ nav ul li a:hover {
 
 h1 {
 
-	font-size: 2em;
 	color: #2262AD;
 	line-height: 1.15em;
 	margin: 20px 0 ;
@@ -157,7 +155,7 @@ article {
     border-top:0;
     border-left:0;
     border-radius: 15;
-    width:80%;
+    width:70%;
     position:relative;
     margin-left: 20px;
     padding-left: 10px;
@@ -171,7 +169,7 @@ article {
     overflow: show;
 }
 
-h2, h3 {
+h2, h3, legend {
     border-bottom: solid 1px #FF9200;
     font-family: 'Arizonia', cursive;
     font-size: 24px;
@@ -190,6 +188,70 @@ caption {
     margin-top: 25px;
 }
 
+.meter {
+	height: 20px;  /* Can be anything */
+	position: relative;
+	background: #555;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+	-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+	box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+}
+
+.meter > span {
+	display: block;
+	height: 100%;
+	   -webkit-border-top-right-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	       -moz-border-radius-topright: 8px;
+	    -moz-border-radius-bottomright: 8px;
+	           border-top-right-radius: 8px;
+	        border-bottom-right-radius: 8px;
+	    -webkit-border-top-left-radius: 20px;
+	 -webkit-border-bottom-left-radius: 20px;
+	        -moz-border-radius-topleft: 20px;
+	     -moz-border-radius-bottomleft: 20px;
+	            border-top-left-radius: 20px;
+	         border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+	background-image: -webkit-gradient(
+	  linear,
+	  left bottom,
+	  left top,
+	  color-stop(0, rgb(43,194,83)),
+	  color-stop(1, rgb(84,240,84))
+	 );
+	background-image: -webkit-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -moz-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -ms-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	background-image: -o-linear-gradient(
+	  center bottom,
+	  rgb(43,194,83) 37%,
+	  rgb(84,240,84) 69%
+	 );
+	-webkit-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	-moz-box-shadow: 
+	  inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+	position: relative;
+	overflow: hidden;
 
 
 table thead tr td {
@@ -210,7 +272,7 @@ a {
     text-decoration: none;
 }
 
-img {
+article p img {
     width: 150px;
     float: right;
     height: auto;
@@ -249,30 +311,32 @@ footer {
     border-top: solid 2px #FF9200;
 }
 
+aside {
+    float: right;
+    padding-top: 20px;
+    display:block;
+    border:6px solid #FF9200;
+    border-top:0;
+    border-left:0;
+    border-radius: 15;
+    width:20%;
+    position:relative;
+    margin-left: 20px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    background: #000000;
+    color: #FFFFFF;
+    bottom:6px;
+    right:6px;
+    opacity:.80;
+    *filter:alpha(opacity="80");
+    overflow: show;
+    
+}
+
 /* MEDIA QUIERY */
 @media only screen and (max-width: 480px){
-    
-    /*RESET*/
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
+
     
     
     body {
@@ -481,5 +545,6 @@ time, mark, audio, video {
     Height: 40px;
     background: #000000;
     border-top: solid 2px #FF9200;
-}
+    }
+
 }
